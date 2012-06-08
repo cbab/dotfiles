@@ -1,0 +1,6 @@
+# Useful aliases
+alias ls='ls --color=auto --group-directories-first'
+alias la='ls -AFhlv'
+alias ll='ls -lh'
+alias df='df -H'
+alias ..='cd ..'
