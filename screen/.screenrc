@@ -1,0 +1,13 @@
+startup_message off
+
+# Fix scrolling
+termcapinfo xterm 'ti@:te@'
+
+# Remove content from editor on window.
+altscreen on
+
+hardstatus alwayslastline '%{= g}%{G}%H%{g}|%= %{= w}%?%-Lw%?%{=b r}(%{W}%n*%f %t%?(%u)%?%{=b r})%{= w}%?%+Lw%?%?%= %{g}|%{Y}%l%{g}%{=b C}%{W}'
+
+# Map escape to Ctrl-o
+escape ^Oo
+
