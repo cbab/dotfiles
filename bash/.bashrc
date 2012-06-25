@@ -13,6 +13,11 @@ if [ -f ~/.prompt ]; then
   source ~/.prompt
 fi
 
+# Dircolors
+if [ -f ~/.dircolors ]; then
+    eval "$(dircolors ~/.dircolors)"
+fi
+
 # Editors
 export EDITOR='emacs'
 export SVN_EDITOR=$EDITOR
