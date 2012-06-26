@@ -17,4 +17,4 @@ LGRAY="\[\033[0;37m\]"
 WHITE="\[\033[1;37m\]"
 NONE="\[\033[0m\]"
 
-export PS1="${RED}\t${WHITE}|${LBLUE}\u${LGRAY}@${DGRAY}\h${WHITE}|\W\$ ${NONE}"
+export PS1="${RED}\t${WHITE}|${BLUE}\u${LGRAY}@${LBLUE}\h${WHITE}|\W\$ ${NONE}"
