@@ -12,49 +12,13 @@ urxvt*font:            -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-u
 urxvt*boldFont:        -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-u
 urxvt*italicFont:      -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-u
 urxvt*bolditalicFont:  -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-u
-urxvt*cursorColor:     #98b9b1
 urxvt*cursorBlink:     true
 
 !
 !    Urxvt Colours
 !
 
-!*background: #2c2c2c
-!*background: #1c1c1c
-!*foreground: #ffffff
-!*foreground: #e4e4e4
-
-! Black
-!*color0:     #363636
-!*color8:     #424242
-
-! Red 
-!*color1:     #c37561
-!*color9:     #d19485
-
-! Green
-!*color2:     #a0a57e
-!*color10:    #b6d99d
-
-! Yellow
-!*color3:     #d1a375
-!*color11:    #debc9c
-
-! Blue
-!*color4:     #7985a3
-!*color12:    #98a1b9
-
-! Purple
-!*color5:     #ab716d
-!*color13:    #be918e
-
-! Cyan
-!*color6:     #98b9b1
-!*color14:    #cbe6cb
-
-! White
-!*color7:     #d0d0d0
-!*color15:    #e6e6e6
+! Based on solarized colour scheme
 
 #define S_base03        #1c1c1c
 #define S_base02        #262626
