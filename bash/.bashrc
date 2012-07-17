@@ -18,6 +18,11 @@ if [ -f ~/.dircolors ]; then
     eval "$(dircolors ~/.dircolors)"
 fi
 
+# Completion
+if [ -f /usr/share/bash-completion/bash_completion ]; then
+    source /usr/share/bash-completion/bash_completion
+fi
+
 # Editors
 export EDITOR='emacs'
 export SVN_EDITOR=$EDITOR
