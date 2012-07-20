@@ -1,7 +1,16 @@
 # Set cursor
 xsetroot -cursor_name left_ptr
 
-# Add to xorg font path or modify xorg.conf file section
-#xset +fp /usr/share/fonts/local
+# Keyboard mapping
+setxkbmap ca -variant multix
+
+# Set wallpaper if one is present
+if [ -f ~/.fehbg ]; then
+    sh ~/.fehbg &
+fi
+
+if [ -f ~/.Xresources ]; then
+    xrdb ~/.Xresources
+fi
 
 exec xmonad
