@@ -12,7 +12,7 @@
 
 ;; Solarized dark theme
 (add-to-list 'custom-theme-load-path 
-      "~/dotfiles/emacs/themes/emacs-color-theme-solarized")
+      "~/dotfiles/emacs/themes/solarized")
 
 (load-theme 'solarized-dark t)
 
