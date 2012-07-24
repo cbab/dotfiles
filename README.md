@@ -13,9 +13,9 @@ git clone https://github.com/cbab/dotfiles.git && cd dotfiles && ./bootstrap.sh
 
 ## Configs
 
-# Bash
-# Emacs
-# Screen
-# Tmux
-# Xorg
+### Bash
+### Emacs
+### Screen
+### Tmux
+### Xorg
 
