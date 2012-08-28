@@ -17,4 +17,9 @@ LGRAY="\[\033[0;37m\]"
 WHITE="\[\033[1;37m\]"
 NONE="\[\033[0m\]"
 
-export PS1="${RED}\t${WHITE}|${BLUE}\u${LGRAY}@${LBLUE}\h${WHITE}|\W\$ ${NONE}"
+# Prompt with git branch
+if [ -f /etc/bash_completion.d/git ]; then
+	export PS1="${RED}\t${WHITE}|${BLUE}\u${LGRAY}@${LBLUE}\h\$(__git_ps1 \"${WHITE}|${LGREEN}%s\")${WHITE}|\W\$ ${NONE}"
+else
+	export PS1="${RED}\t${WHITE}|${BLUE}\u${LGRAY}@${LBLUE}\h${WHITE}|\W\$ ${NONE}"
+fi
