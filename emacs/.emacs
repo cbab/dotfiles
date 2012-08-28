@@ -33,6 +33,8 @@
 (setq auto-save-file-name-transforms
       `((".*" ,user-temporary-file-directory t)))
 
+(setq vc-follow-symlinks t)
+
 ;; Coding style ;;
 
 ;; Insert spaces instead of tabs
@@ -76,7 +78,12 @@
 
 ;; Ediff in vertical mode
 (custom-set-variables
- '(ediff-split-window-function (quote split-window-horizontally)))
+ '(background-color "#1c1c1c")
+ '(background-mode dark)
+ '(cursor-color "#808080")
+ '(custom-safe-themes (quote ("1e7e097ec8cb1f8c3a912d7e1e0331caeed49fef6cff220be63bd2a6ba4cc365" default)))
+ '(ediff-split-window-function (quote split-window-horizontally))
+ '(foreground-color "#808080"))
 
 ;; Colors ;;
 
@@ -94,10 +101,8 @@
  '(ediff-odd-diff-A ((t (:background "brightblack" :foreground "brightgreen"))))
  '(ediff-odd-diff-B ((t (:background "brightblack" :foreground "brightgreen"))))
  '(ediff-odd-diff-C ((t (:background "brightblack" :foreground "brightgreen"))))
-
 ;; Line number colors
  '(linum ((t (:background "brightblack" :foreground "brightgreen"))))
-
 ;; Comment color
  '(font-lock-comment-face ((((class color) (min-colors 8) (background dark)) (:foreground "brightyellow")))))
 
