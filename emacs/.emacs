@@ -64,6 +64,9 @@
 
 ;; Key remapping ;;
 
+;; Use FAPP bindings
+(ffap-bindings)
+
 ;; Record macros
 (global-set-key [f6] 'start-kbd-macro)
 (global-set-key [f7] 'end-kbd-macro)
