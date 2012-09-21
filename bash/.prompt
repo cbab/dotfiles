@@ -18,7 +18,8 @@ WHITE="\[\033[1;37m\]"
 NONE="\[\033[0m\]"
 
 # Prompt with git branch
-if [ -f /etc/bash_completion.d/git ]; then
+if [ -f /usr/share/git/git-prompt.sh ]; then
+	source /usr/share/git/git-prompt.sh
 	export PS1="${RED}\t${WHITE}|${BLUE}\u${LGRAY}@${LBLUE}\h\$(__git_ps1 \"${WHITE}|${LGREEN}%s\")${WHITE}|\W\$ ${NONE}"
 else
 	export PS1="${RED}\t${WHITE}|${BLUE}\u${LGRAY}@${LBLUE}\h${WHITE}|\W\$ ${NONE}"
