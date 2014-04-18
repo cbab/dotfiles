@@ -9,6 +9,10 @@
 (require 'magit)
 (require 'whitespace)
 (require 'windows-mvmt)
+(require 'haskell-mode)
+(require 'xcscope)
+
+(setq cscope-do-not-update-database t)
 
 ;; Solarized dark theme
 (add-to-list 'custom-theme-load-path 
@@ -67,10 +71,19 @@
 ;; Use FAPP bindings
 (ffap-bindings)
 
+;; Cscope bindings
+(global-set-key (kbd "<f5>")  'cscope-pop-mark)
+(global-set-key (kbd "<f6>")  'cscope-find-this-text-string)
+(global-set-key (kbd "<f7>")  'cscope-find-this-symbol)
+(global-set-key (kbd "<f8>")  'cscope-find-functions-calling-this-function)
+(global-set-key (kbd "<f9>")  'cscope-find-called-functions)
+;;(global-set-key (kbd "C-<f9>")  'cscope-prev-symbol)
+;;(global-set-key (kbd "C-<f10>") 'cscope-next-symbol)
+
 ;; Record macros
-(global-set-key [f6] 'start-kbd-macro)
-(global-set-key [f7] 'end-kbd-macro)
-(global-set-key [f8] 'call-last-kbd-macro)
+(global-set-key (kbd "<f10>") 'start-kbd-macro)
+(global-set-key (kbd "<f11>") 'end-kbd-macro)
+(global-set-key (kbd "<f12>") 'call-last-kbd-macro)
 
 ;; Windows movements
 (global-set-key (kbd "C-x p")       'back-window)
