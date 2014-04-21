@@ -9,10 +9,6 @@
 (require 'magit)
 (require 'whitespace)
 (require 'windows-mvmt)
-(require 'haskell-mode)
-(require 'xcscope)
-
-(setq cscope-do-not-update-database t)
 
 ;; Solarized dark theme
 (add-to-list 'custom-theme-load-path 
